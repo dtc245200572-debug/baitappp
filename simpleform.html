@@ -3,81 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Research Survey</title>
+    <title>Danh sách sản phẩm</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            padding: 20px;
+            margin: 20px;
+            background-color: #f9f9f9;
         }
-        .survey-container {
-            background-color: #ffffff;
-            max-width: 650px;
-            margin: 0 auto;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            margin-top: 0;
+        h1 {
             color: #333;
         }
-        p.subtitle {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 25px;
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .form-group {
-            margin-bottom: 20px;
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 10px;
         }
-        label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 8px;
+        th {
+            background-color: #f2f2f2;
+            color: #333;
         }
-        input[type="text"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 8px 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        .radio-group label, .checkbox-group label {
-            display: block;
-            font-weight: normal;
-            margin-bottom: 6px;
-        }
-        .required {
-            color: red;
-        }
-        button[type="submit"] {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button[type="submit"]:hover {
-            background-color: #0056b3;
+        tr:nth-child(even) {
+            background-color: #fafafa;
         }
     </style>
 </head>
 <body>
 
-    <div class="survey-container">
-        <h2>Market Research Survey</h2>
-        <p class="subtitle">Please take a few minutes to give us feedback about our service by filling out the form below.</p>
+    <h1>Danh sách sản phẩm</h1>
 
-        <form action="#" method="POST">
-            
-            <div class="form-group">
-                <label for="age">What is your age range? <span class="required">*</span></label>
-                <select id="age" name="age" required>
-                    <option value="">-- Please Select --</option>
-                    <option value="18-24">18 - 24</option>
-                    <option value="25-34">25 - 34</option>
-                    <option value="35
+    <table>
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>iPhone 15 Pro Max</td>
+                <td>29,990,000 VNĐ</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Samsung Galaxy S24 Ultra</td>
+                <td>27,990,000 VNĐ</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>MacBook Pro M3</td>
+                <td>39,990,000 VNĐ</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Tai nghe Sony WH-1000XM5</td>
+                <td>8,490,000 VNĐ</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
