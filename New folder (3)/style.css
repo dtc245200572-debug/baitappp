@@ -1,60 +1,55 @@
-/* Element Selector: Đổi màu nền trang web */
+/* Thiết lập màu nền cho toàn bộ trang web */
 body {
-    background-color: #f0f4f8;
+    background-color: #f0f2f5;
     font-family: Arial, sans-serif;
-    padding: 30px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
-/* ID Selector: Căn giữa tiêu đề h1 */
-#main-title {
-    text-align: center;
+/* Định dạng tiêu đề h1 */
+h1 {
     color: #1a365d;
+    margin-bottom: 10px;
 }
 
-/* Class Selector: Định dạng đoạn văn mô tả */
-.description {
-    text-align: center;
+/* Định dạng đoạn văn mô tả */
+.intro-text {
     color: #4a5568;
     font-size: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-/* Grouping / Class Selector: Định dạng danh sách sở thích với màu sắc khác nhau */
-.hobby-list {
-    width: 250px;
-    margin: 0 auto 30px auto;
-    padding-left: 20px;
-}
+/* Khối div chứa nội dung quan trọng */
+.content-box {
+    /* Đặt ảnh nền (sử dụng ảnh online hoặc file ảnh cục bộ) */
+    background-image: url('https://picsum.photos/800/400');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-.hobby-list .item-1 {
-    color: #e53e3e; /* Màu đỏ */
-    font-weight: bold;
-}
-
-.hobby-list .item-2 {
-    color: #319795; /* Màu xanh ngọc */
-    font-weight: bold;
-}
-
-.hobby-list .item-3 {
-    color: #d69e2e; /* Màu vàng */
-    font-weight: bold;
-}
-
-/* Class Selector & Pseudo-class (:hover): Định dạng nút bấm và hiệu ứng di chuột */
-.btn-action {
-    display: block;
+    /* Đặt kích thước khối */
+    width: 80%;
+    max-width: 600px;
+    padding: 40px 20px;
+    
+    /* Căn giữa khối div ra giữa màn hình */
     margin: 0 auto;
-    padding: 10px 20px;
-    background-color: #3182ce;
+
+    /* Căn giữa chữ inside khối div */
+    text-align: center;
     color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    
+    /* Làm đẹp khối div */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.btn-action:hover {
-    background-color: #2b6cb0; /* Đổi màu đậm hơn khi hover */
+.content-box h2 {
+    margin-top: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.content-box p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
