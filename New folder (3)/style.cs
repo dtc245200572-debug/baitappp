@@ -1,43 +1,58 @@
-/* Thiết lập quy tắc chung cho font chữ và margin/padding */
-body, ul, li {
+/* 1. Thiết lập phông chữ chung và định dạng vùng chứa menu */
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Định dạng cho các phần tử danh sách (li) */
-#menu ul li {
-    list-style: none;            /* Bỏ dấu chấm bullet */
-    position: relative;          /* Làm mốc vị trí cho menu con absolute */
-    width: 120px;
-    height: 30px;
-    padding: 0 20px;
-    background-color: black;
-    line-height: 30px;
-    cursor: pointer;
-}
-
-/* Định dạng thẻ liên kết a trong menu */
-#menu ul li a {
-    text-decoration: none;       /* Bỏ gạch chân */
-    color: white;               /* Màu chữ trắng */
-    display: block;
-}
-
-/* Hiệu ứng đổi màu nền khi di chuột qua mục menu */
-#menu ul li:hover {
+#menu {
+    height: 40px;
     background-color: #333333;
 }
 
-/* Định dạng danh sách menu con (Dropdown) */
-#menu ul li ul {
-    position: absolute;
-    top: 0;
-    left: 160px;                /* Đặt menu con nằm sang bên phải (width 120px + padding 40px) */
-    visibility: hidden;         /* Ẩn menu con mặc định */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Hiển thị menu con khi di chuột vào phần tử cha */
+/* 2. Định nghĩa cho các phần tử cấp 1 hiển thị theo chiều ngang */
+#menu > ul > li {
+    float: left;
+    position: relative; /* Làm mốc cho menu con absolute bên dưới */
+}
+
+/* 3. Định dạng liên kết (thẻ a) */
+#menu ul li a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #333333;
+}
+
+/* 4. Hiệu ứng đổi màu nền sang đỏ khi hover */
+#menu ul li a:hover {
+    background-color: red;
+}
+
+/* 5. Vị trí và ẩn menu con (dropdown) */
+#menu ul ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    visibility: hidden; /* Mặc định ẩn menu con */
+    z-index: 1000;
+}
+
+#menu ul ul li {
+    float: none; /* Các mục trong menu con xếp theo chiều dọc */
+}
+
+/* 6. Hiển thị menu con khi di chuột vào mục cha */
 #menu ul li:hover > ul {
     visibility: visible;
 }
