@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách sản phẩm</title>
+    <title>Lịch họp công ty</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,57 +14,62 @@
             color: #333;
         }
         table {
-            width: 60%;
+            width: 80%;
             border-collapse: collapse;
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 10px;
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
         }
         th {
-            background-color: #f2f2f2;
-            color: #333;
+            background-color: #007bff;
+            color: white;
         }
         tr:nth-child(even) {
-            background-color: #fafafa;
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
 
-    <h1>Danh sách sản phẩm</h1>
+    <h1>Lịch họp công ty</h1>
 
     <table>
         <thead>
             <tr>
-                <th>Tên sản phẩm</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
+                <th>Thứ / Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>iPhone 15 Pro Max</td>
-                <td>29,990,000 VNĐ</td>
-                <td>15</td>
+                <!-- Gộp 2 dòng cho cột Ngày -->
+                <td rowspan="2">Thứ Hai (20/10)</td>
+                <td>08:00 - 09:30</td>
+                <td>Họp giao ban đầu tuần</td>
             </tr>
             <tr>
-                <td>Samsung Galaxy S24 Ultra</td>
-                <td>27,990,000 VNĐ</td>
-                <td>10</td>
+                <td>10:00 - 11:30</td>
+                <td>Họp dự án Alpha với đối tác</td>
             </tr>
             <tr>
-                <td>MacBook Pro M3</td>
-                <td>39,990,000 VNĐ</td>
-                <td>8</td>
+                <td>Thứ Ba (21/10)</td>
+                <!-- Gộp 2 cột cho trường hợp họp kéo dài cả ngày -->
+                <td colspan="2">Đào tạo nội bộ quy trình làm việc mới (Cả ngày)</td>
             </tr>
             <tr>
-                <td>Tai nghe Sony WH-1000XM5</td>
-                <td>8,490,000 VNĐ</td>
-                <td>25</td>
+                <!-- Gộp 2 dòng cho cột Ngày -->
+                <td rowspan="2">Thứ Tư (22/10)</td>
+                <td>13:30 - 15:00</td>
+                <td>Họp phòng Marketing về chiến dịch mới</td>
+            </tr>
+            <tr>
+                <td>15:30 - 17:00</td>
+                <td>Họp tổng kết tiến độ dự án Beta</td>
             </tr>
         </tbody>
     </table>
