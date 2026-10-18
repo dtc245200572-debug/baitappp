@@ -1,8 +1,60 @@
-/* Định dạng cho Phần 3: External-style */
-.external-heading {
-    color: purple;
+/* Element Selector: Đổi màu nền trang web */
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    padding: 30px;
 }
 
-.external-text {
-    color: teal;
+/* ID Selector: Căn giữa tiêu đề h1 */
+#main-title {
+    text-align: center;
+    color: #1a365d;
+}
+
+/* Class Selector: Định dạng đoạn văn mô tả */
+.description {
+    text-align: center;
+    color: #4a5568;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* Grouping / Class Selector: Định dạng danh sách sở thích với màu sắc khác nhau */
+.hobby-list {
+    width: 250px;
+    margin: 0 auto 30px auto;
+    padding-left: 20px;
+}
+
+.hobby-list .item-1 {
+    color: #e53e3e; /* Màu đỏ */
+    font-weight: bold;
+}
+
+.hobby-list .item-2 {
+    color: #319795; /* Màu xanh ngọc */
+    font-weight: bold;
+}
+
+.hobby-list .item-3 {
+    color: #d69e2e; /* Màu vàng */
+    font-weight: bold;
+}
+
+/* Class Selector & Pseudo-class (:hover): Định dạng nút bấm và hiệu ứng di chuột */
+.btn-action {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #3182ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-action:hover {
+    background-color: #2b6cb0; /* Đổi màu đậm hơn khi hover */
 }
