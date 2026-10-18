@@ -3,39 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực hành Bảng trong CSS</title>
+    <title>Trang Web Cá Nhân</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h2>Danh sách lớp học</h2>
+    <header>
+        <h1>Chào mừng đến với trang web cá nhân của tôi</h1>
+    </header>
 
-    <table>
-        <thead>
+    <section class="profile">
+        <img src="avatar.jpg" alt="Ảnh đại diện" class="avatar">
+        <p>Xin chào! Tôi là <strong>Nguyễn Văn A</strong>, một lập trình viên yêu thích công nghệ.</p>
+    </section>
+
+    <section class="hobbies">
+        <h2>Sở thích</h2>
+        <ul>
+            <li>Đọc sách</li>
+            <li>Chơi thể thao</li>
+            <li>Lập trình</li>
+            <li>Du lịch</li>
+        </ul>
+    </section>
+
+    <section class="goals">
+        <h2>Mục tiêu học tập</h2>
+        <p>Tôi muốn trở thành một lập trình viên chuyên nghiệp, xây dựng các sản phẩm hữu ích.</p>
+    </section>
+
+    <footer>
+        <h2>Thông tin liên hệ</h2>
+        <table border="1">
             <tr>
-                <th>Họ tên</th>
-                <th>Tuổi</th>
-                <th>Lớp</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Nguyễn Văn A</td>
-                <td>20</td>
-                <td>Web</td>
+                <th>Email</th>
+                <td>nguyenvana@example.com</td>
             </tr>
             <tr>
-                <td>Trần Thị B</td>
-                <td>21</td>
-                <td>Web</td>
+                <th>Facebook</th>
+                <td><a href="#">facebook.com/nguyenvana</a></td>
             </tr>
-            <tr>
-                <td>Lê Văn C</td>
-                <td>22</td>
-                <td>Web</td>
-            </tr>
-        </tbody>
-    </table>
+        </table>
+    </footer>
 
 </body>
 </html>
