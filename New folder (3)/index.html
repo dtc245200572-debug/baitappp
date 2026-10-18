@@ -3,51 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ Giản Lược</title>
+    <title>Website Xem Phim Hoạt Hình Trực Tuyến</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header cố định phía trên -->
-    <header class="main-header">
-        <h1>Tiêu đề Trang Web</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Dịch vụ</a></li>
-                <li><a href="#">Liên hệ</a></li>
-            </ul>
+    <!-- Header cố định -->
+    <header class="header">
+        <div class="logo">
+            <h2>🎬 Hoạt Hình Vietsub</h2>
+        </div>
+        <nav class="head-link">
+            <a href="#">Trang chủ</a>
+            <a href="#">Thể loại</a>
+            <a href="#">Mới cập nhật</a>
+            <a href="#">Xem nhiều nhất</a>
         </nav>
     </header>
 
-    <!-- Khối chứa nội dung chính và 2 sidebar -->
-    <div class="page-container">
-        <!-- Sidebar Trái -->
-        <aside class="sidebar left-sidebar">
-            <h3>Sidebar Trái</h3>
+    <!-- Khối nội dung chính -->
+    <div class="content">
+        <!-- Left Content: Menu danh sách video -->
+        <aside class="left-content">
+            <h3>Danh sách phim</h3>
             <ul>
-                <li>Mục 1</li>
-                <li>Mục 2</li>
-                <li>Mục 3</li>
+                <li><a href="#" class="active">Doraemon Tập 1 - Bánh Rán 神奇</a></li>
+                <li><a href="#">Conan Tập 1 - Thám Tử Lừng Danh</a></li>
+                <li><a href="#">Shin Cậu Bé Bút Chì</a></li>
+                <li><a href="#">Tom & Jerry Tập Đặc Biệt</a></li>
+                <li><a href="#">Dragon Ball Super - Bảy Viên Ngọc Rồng</a></li>
             </ul>
         </aside>
 
-        <!-- Nội dung chính -->
-        <main class="main-content">
-            <h2>Nội dung chính của trang</h2>
-            <p>Đây là khu vực chứa nội dung quan trọng nhất của trang web. Chúng ta sẽ đặt các bài viết, sản phẩm, hoặc thông tin chi tiết tại đây.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet. Magnam, cumque. Repellendus, ea! Reprehenderit, quod. Ullam, quas. Dolorum, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet. Magnam, cumque. Repellendus, ea! Reprehenderit, quod. Ullam, quas. Dolorum, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet. Magnam, cumque. Repellendus, ea! Reprehenderit, quod. Ullam, quas. Dolorum, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo.</p>
+        <!-- Right Content: Khung xem video chính -->
+        <main class="right-content">
+            <div class="video-container">
+                <!-- Nhúng video YouTube bằng <iframe> -->
+                <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="Video hoạt hình" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <div class="video-info">
+                <h1>Doraemon: Hành Trình Khám Phá Thế Giới Tuổi Thơ</h1>
+                <p><strong>Lượt xem:</strong> 125,000 | <strong>Chất lượng:</strong> Full HD 1080p | <strong>Thuyết minh:</strong> Tiếng Việt</p>
+                <p class="description">
+                    Bộ phim hoạt hình dành cho lứa tuổi thiếu nhi với nội dung chọn lọc, mang lại giây phút giải trí lành mạnh và bổ ích.
+                </p>
+            </div>
         </main>
-
-        <!-- Sidebar Phải -->
-        <aside class="sidebar right-sidebar">
-            <h3>Sidebar Phải</h3>
-            <p>Đây là một sidebar khác, có thể chứa quảng cáo, bài viết liên quan hoặc các widget khác.</p>
-        </aside>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Website Xem Hoạt Hình Trực Tuyến. Bản quyền thuộc về Chuyên mục Phim Hoạt Hình Trẻ Em.</p>
+    </footer>
 
 </body>
 </html>
