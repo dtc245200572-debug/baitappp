@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tạo trang web với màu nền và ảnh nền</title>
+    <title>Bài tập Sử dụng Box Model 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Chào mừng đến với trang web của tôi</h1>
+    <!-- Thẻ 1: Sử dụng content-box, màu xanh lá -->
+    <div class="card">
+        <h3>Thẻ 1 (content-box)</h3>
+        <p>Đây là thẻ sử dụng thuộc tính box-sizing: content-box.</p>
+    </div>
 
-    <p class="intro-text">
-        Đây là trang web minh họa cách kết hợp giữa màu nền (background-color) và ảnh nền (background-image) trong CSS.
-    </p>
+    <!-- Thẻ 2: Sử dụng border-box, màu vàng -->
+    <div class="card">
+        <h3>Thẻ 2 (border-box)</h3>
+        <p>Đây là thẻ sử dụng thuộc tính box-sizing: border-box.</p>
+    </div>
 
-    <!-- Khối div chứa nội dung quan trọng -->
-    <div class="content-box">
-        <h2>Nội dung quan trọng</h2>
-        <p>Khối này được căn giữa và có hình nền bắt mắt.</p>
+    <!-- Thẻ 3: Sử dụng border-box, màu đỏ -->
+    <div class="card">
+        <h3>Thẻ 3 (border-box)</h3>
+        <p>Thẻ này cũng dùng border-box với màu nền đỏ.</p>
     </div>
 
 </body>
