@@ -3,52 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Đăng Ký Người Dùng</title>
+    <title>Market Research Survey</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f8f9fa;
             padding: 20px;
         }
-        .registration-form {
-            background-color: #fff;
-            max-width: 450px;
+        .survey-container {
+            background-color: #ffffff;
+            max-width: 650px;
             margin: 0 auto;
-            padding: 25px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        p.subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 25px;
         }
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         label {
             display: block;
-            margin-bottom: 5px;
             font-weight: bold;
+            margin-bottom: 8px;
         }
         input[type="text"],
-        input[type="email"],
-        input[type="tel"] {
+        select,
+        textarea {
             width: 100%;
-            padding: 8px;
+            padding: 8px 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
         }
-        .gender-group label {
-            display: inline;
+        .radio-group label, .checkbox-group label {
+            display: block;
             font-weight: normal;
-            margin-right: 15px;
+            margin-bottom: 6px;
+        }
+        .required {
+            color: red;
         }
         button[type="submit"] {
             background-color: #007bff;
             color: white;
-            padding: 10px 15px;
+            padding: 10px 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            width: 100%;
             font-size: 16px;
         }
         button[type="submit"]:hover {
@@ -58,31 +68,16 @@
 </head>
 <body>
 
-    <div class="registration-form">
-        <h2>Đăng Ký Người Dùng</h2>
-        <form action="http://demo.codegym.vn/6/registration_form/register.php" method="POST">
+    <div class="survey-container">
+        <h2>Market Research Survey</h2>
+        <p class="subtitle">Please take a few minutes to give us feedback about our service by filling out the form below.</p>
+
+        <form action="#" method="POST">
             
             <div class="form-group">
-                <label for="name">Họ và tên:</label>
-                <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Nhập email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Số điện thoại:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
-            </div>
-
-            <div class="form-group gender-group">
-                <label>Giới tính:</label><br>
-                <input type="radio" id="male" name="gender" value="Nam" checked>
-                <label for="male">Nam</label>
-
-                <input type="radio" id="female" name="gender" value="Nữ">
-                <label for="female">Nữ</label>
-
-                <input type="radio" id="other" name="gender" value="Kh
+                <label for="age">What is your age range? <span class="required">*</span></label>
+                <select id="age" name="age" required>
+                    <option value="">-- Please Select --</option>
+                    <option value="18-24">18 - 24</option>
+                    <option value="25-34">25 - 34</option>
+                    <option value="35
