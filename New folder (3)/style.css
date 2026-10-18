@@ -1,50 +1,38 @@
-/* Quy tắc chung cho trang */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
     padding: 20px;
 }
 
-/* Định dạng thanh menu điều hướng */
-nav {
+/* Container dùng overflow: hidden để ôm trọn các phần tử con float */
+.container {
+    width: 100%;
+    overflow: hidden;
     margin-bottom: 20px;
 }
 
-nav a {
-    display: inline-block;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #007bff;
-}
-
-/* Định dạng khối section chứa các cột */
-section {
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-/* Định dạng các khối cột hiển thị dạng inline-block */
-.box {
-    display: inline-block;
-    width: 25%;
-    max-width: 300px;
+.left-column {
+    width: 50%;
+    float: left;
+    background-color: lightgray;
     padding: 20px;
-    background-color: lightblue;
-    margin: 10px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    vertical-align: top;
 }
 
-/* Định dạng footer */
-footer {
-    margin-top: 30px;
-    color: #666;
-    font-size: 14px;
+.right-column {
+    width: 50%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+/* Khối overflow hiển thị thanh cuộn khi nội dung vượt quá kích thước */
+.overflow-box {
+    width: 300px;
+    height: 100px;
+    background-color: lightcoral;
+    padding: 10px;
+    overflow: auto;
 }
