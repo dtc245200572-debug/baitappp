@@ -1,0 +1,84 @@
+/* General reset */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* 2. Kiểu đánh dấu vuông */
+.square-list {
+    list-style-type: square;
+}
+
+/* 3. Số La Mã viết hoa */
+.roman-list {
+    list-style-type: upper-roman;
+}
+
+/* 4. Sử dụng hình ảnh làm dấu đánh dấu */
+.image-list {
+    /* Thay đường dẫn URL bằng hình ảnh icon thực tế của bạn */
+    list-style-image: url('https://cdn-icons-png.flaticon.com/16/1828/1828640.png');
+}
+
+/* 5. Vị trí dấu đánh dấu */
+.pos-outside {
+    list-style-position: outside;
+    background-color: #e9ecef;
+    padding: 10px 30px;
+}
+
+.pos-inside {
+    list-style-position: inside;
+    background-color: #e9ecef;
+    padding: 10px 30px;
+}
+
+/* 6. Thuộc tính rút gọn list-style */
+.shorthand-list {
+    list-style: square inside;
+}
+
+/* 7. Định dạng màu sắc và khoảng cách */
+.styled-languages {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+    list-style-type: circle;
+}
+
+.styled-languages li {
+    color: #ffffff;
+    margin: 8px 0;
+    padding: 5px 10px;
+    background-color: #34495e;
+    border-radius: 4px;
+}
+
+/* 8. Bài tập tổng hợp: Lộ trình học Web */
+.web-roadmap {
+    /* Thuộc tính rút gọn */
+    list-style: upper-roman inside;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-left: 5px solid #2ecc71;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.web-roadmap li {
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #e8f8f5;
+    border-radius: 4px;
+}
