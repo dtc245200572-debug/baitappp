@@ -1,37 +1,43 @@
-body {
-    margin: 0;
+/* Thiết lập quy tắc chung cho font chữ và margin/padding */
+body, ul, li {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Định dạng thanh menu cố định phía trên */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Đảm bảo menu luôn nằm trên cùng */
+/* Định dạng cho các phần tử danh sách (li) */
+#menu ul li {
+    list-style: none;            /* Bỏ dấu chấm bullet */
+    position: relative;          /* Làm mốc vị trí cho menu con absolute */
+    width: 120px;
+    height: 30px;
+    padding: 0 20px;
+    background-color: black;
+    line-height: 30px;
+    cursor: pointer;
 }
 
-/* Định dạng các liên kết trong menu */
-.navbar a {
-    float: left;
+/* Định dạng thẻ liên kết a trong menu */
+#menu ul li a {
+    text-decoration: none;       /* Bỏ gạch chân */
+    color: white;               /* Màu chữ trắng */
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+/* Hiệu ứng đổi màu nền khi di chuột qua mục menu */
+#menu ul li:hover {
+    background-color: #333333;
 }
 
-/* Định dạng khối nội dung chính */
-.main {
-    padding: 16px;
-    margin-top: 50px; /* Tránh cho nội dung bị che lấp bởi fixed menu */
-    height: 1500px;  /* Tạo chiều cao lớn để hiển thị thanh cuộn */
+/* Định dạng danh sách menu con (Dropdown) */
+#menu ul li ul {
+    position: absolute;
+    top: 0;
+    left: 160px;                /* Đặt menu con nằm sang bên phải (width 120px + padding 40px) */
+    visibility: hidden;         /* Ẩn menu con mặc định */
+}
+
+/* Hiển thị menu con khi di chuột vào phần tử cha */
+#menu ul li:hover > ul {
+    visibility: visible;
 }
