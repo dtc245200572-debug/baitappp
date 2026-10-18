@@ -3,77 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực hành Danh sách trong CSS</title>
+    <title>Thực hành Bảng trong CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Section 2: Thay đổi kiểu đánh dấu danh sách không thứ tự -->
-    <h2>2. Danh sách môn học (Square)</h2>
-    <ul class="square-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-    </ul>
+    <h2>Danh sách lớp học</h2>
 
-    <!-- Section 3: Danh sách có thứ tự (Chữ số La Mã) -->
-    <h2>3. Các bước học (Upper-Roman)</h2>
-    <ol class="roman-list">
-        <li>Học HTML</li>
-        <li>Học CSS</li>
-        <li>Học JavaScript</li>
-        <li>Học Git</li>
-    </ol>
-
-    <!-- Section 4: Dùng hình ảnh làm dấu đánh dấu -->
-    <h2>4. Công cụ học tập (List Style Image)</h2>
-    <ul class="image-list">
-        <li>Visual Studio Code</li>
-        <li>Google Chrome</li>
-        <li>GitHub</li>
-        <li>Git</li>
-    </ul>
-
-    <!-- Section 5: Thay đổi vị trí dấu đánh dấu -->
-    <h2>5. Vị trí dấu đánh dấu (Outside vs Inside)</h2>
-    <p>Outside (Mặc định):</p>
-    <ul class="pos-outside">
-        <li>Mục 1 - Dấu đánh dấu nằm bên ngoài khối nội dung</li>
-        <li>Mục 2 - Dấu đánh dấu nằm bên ngoài khối nội dung</li>
-    </ul>
-
-    <p>Inside:</p>
-    <ul class="pos-inside">
-        <li>Mục 1 - Dấu đánh dấu nằm bên trong khối nội dung</li>
-        <li>Mục 2 - Dấu đánh dấu nằm bên trong khối nội dung</li>
-    </ul>
-
-    <!-- Section 6: Thuộc tính rút gọn list-style -->
-    <h2>6. Sử dụng thuộc tính rút gọn list-style</h2>
-    <ul class="shorthand-list">
-        <li>Danh sách sử dụng shorthand list-style</li>
-        <li>Đầy đủ các thiết lập kiểu, vị trí</li>
-    </ul>
-
-    <!-- Section 7: Tạo kiểu danh sách với màu sắc & khoảng cách -->
-    <h2>7. Ngôn ngữ lập trình (Màu sắc & Khoảng cách)</h2>
-    <ul class="styled-languages">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-    </ul>
-
-    <!-- Section 8: Bài tập tổng hợp - Lộ trình học lập trình Web -->
-    <h2>8. Bài tập tổng hợp: Lộ trình học lập trình Web</h2>
-    <ol class="web-roadmap">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-        <li>GitHub</li>
-    </ol>
+    <table>
+        <thead>
+            <tr>
+                <th>Họ tên</th>
+                <th>Tuổi</th>
+                <th>Lớp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nguyễn Văn A</td>
+                <td>20</td>
+                <td>Web</td>
+            </tr>
+            <tr>
+                <td>Trần Thị B</td>
+                <td>21</td>
+                <td>Web</td>
+            </tr>
+            <tr>
+                <td>Lê Văn C</td>
+                <td>22</td>
+                <td>Web</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
