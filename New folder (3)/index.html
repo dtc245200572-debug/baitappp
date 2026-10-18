@@ -3,65 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Xem Phim Hoạt Hình Trực Tuyến</title>
+    <title>Bố cục bằng Float</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header cố định -->
-    <header class="header">
-        <div class="logo">
-            <h2>🎬 Hoạt Hình Vietsub</h2>
+    <div class="container">
+        <div class="left-column">
+            <h2>Cột bên trái</h2>
+            <p>Đây là khu vực chứa nội dung chính của trang web.</p>
         </div>
-        <nav class="head-link">
-            <a href="#">Trang chủ</a>
-            <a href="#">Thể loại</a>
-            <a href="#">Mới cập nhật</a>
-            <a href="#">Xem nhiều nhất</a>
-        </nav>
-    </header>
-
-    <!-- Khối nội dung chính -->
-    <div class="content">
-        <!-- Left Content: Menu danh sách video -->
-        <aside class="left-content">
-            <h3>Danh sách phim</h3>
-            <ul>
-                <li><a href="#" class="active">Doraemon Tập 1 - Bánh Rán 神奇</a></li>
-                <li><a href="#">Conan Tập 1 - Thám Tử Lừng Danh</a></li>
-                <li><a href="#">Shin Cậu Bé Bút Chì</a></li>
-                <li><a href="#">Tom & Jerry Tập Đặc Biệt</a></li>
-                <li><a href="#">Dragon Ball Super - Bảy Viên Ngọc Rồng</a></li>
-            </ul>
-        </aside>
-
-        <!-- Right Content: Khung xem video chính -->
-        <main class="right-content">
-            <div class="video-container">
-                <!-- Nhúng video YouTube bằng <iframe> -->
-                <iframe 
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                    title="Video hoạt hình" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-            
-            <div class="video-info">
-                <h1>Doraemon: Hành Trình Khám Phá Thế Giới Tuổi Thơ</h1>
-                <p><strong>Lượt xem:</strong> 125,000 | <strong>Chất lượng:</strong> Full HD 1080p | <strong>Thuyết minh:</strong> Tiếng Việt</p>
-                <p class="description">
-                    Bộ phim hoạt hình dành cho lứa tuổi thiếu nhi với nội dung chọn lọc, mang lại giây phút giải trí lành mạnh và bổ ích.
-                </p>
-            </div>
-        </main>
+        <div class="right-column">
+            <h2>Cột bên phải</h2>
+            <p>Đây là khu vực chứa thanh bên (sidebar).</p>
+        </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Website Xem Hoạt Hình Trực Tuyến. Bản quyền thuộc về Chuyên mục Phim Hoạt Hình Trẻ Em.</p>
-    </footer>
 
 </body>
 </html>
